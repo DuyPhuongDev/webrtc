@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Exam System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-laptop me-2"></i>
+          Online Exam System
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-8">
+          <h1 class="display-4 fw-bold">Secure Online Examination</h1>
+          <p class="lead text-muted">
+            A comprehensive online exam system with webcam and audio monitoring
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body text-center py-5">
+              <i class="bi bi-person-video3 display-1 text-primary mb-3"></i>
+              <h2>Student Portal</h2>
+              <p class="text-muted mb-4">Take exams with secure monitoring</p>
+
+              <form id="student-login" class="text-start">
+                <div class="mb-3">
+                  <label for="student-id" class="form-label">Student ID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="student-id"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exam-code" class="form-label">Exam Code</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exam-code"
+                    required
+                  />
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Enter Exam
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body text-center py-5">
+              <i class="bi bi-person-workspace display-1 text-success mb-3"></i>
+              <h2>Teacher Portal</h2>
+              <p class="text-muted mb-4">Create and monitor exams</p>
+
+              <form id="teacher-login" class="text-start">
+                <div class="mb-3">
+                  <label for="teacher-id" class="form-label">Teacher ID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="teacher-id"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="teacher-password" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="teacher-password"
+                    required
+                  />
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-success btn-lg">
+                    Teacher Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <section id="features" class="my-5 py-5">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="display-5">System Features</h2>
+            <p class="lead text-muted">
+              Comprehensive exam proctoring solution
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-item text-center p-4">
+              <div
+                class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3"
+              >
+                <i class="bi bi-camera-video"></i>
+              </div>
+              <h5>Webcam Monitoring</h5>
+              <p>
+                Live video monitoring during exams to ensure academic integrity
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-item text-center p-4">
+              <div
+                class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3"
+              >
+                <i class="bi bi-mic"></i>
+              </div>
+              <h5>Audio Monitoring</h5>
+              <p>Audio surveillance to detect unauthorized discussions</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-item text-center p-4">
+              <div
+                class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3"
+              >
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h5>Secure Environment</h5>
+              <p>End-to-end encryption and secure data handling</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Online Exam System</h5>
+            <p>© 2025 DuyPhuongDev. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>Powered by WebRTC SFU & FastAPI</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      // Form submission handlers
+      document
+        .getElementById("student-login")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const studentId = document.getElementById("student-id").value;
+          const examCode = document.getElementById("exam-code").value;
+
+          // Store in session storage
+          sessionStorage.setItem("studentId", studentId);
+          sessionStorage.setItem("examCode", examCode);
+
+          // Redirect to exam page
+          window.location.href = "student/exam.html";
+        });
+
+      document
+        .getElementById("teacher-login")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const teacherId = document.getElementById("teacher-id").value;
+
+          // Store in session storage
+          sessionStorage.setItem("teacherId", teacherId);
+
+          // Redirect to teacher dashboard
+          window.location.href = "teacher/dashboard.html";
+        });
+    </script>
+  </body>
+</html>

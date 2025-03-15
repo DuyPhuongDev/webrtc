@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styling */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+
+/* Status Indicators */
+.status-indicator {
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #f1f1f1;
+  font-size: 0.9em;
+}
+
+.status-indicator.connected {
+  background: #d1ffd6;
+  color: #0a6c0a;
+}
+
+.status-indicator.connecting {
+  background: #ffe9c7;
+  color: #b86e00;
+}
+
+.status-indicator.disconnected {
+  background: #ffd1d1;
+  color: #a50000;
+}
+
+/* Video Elements */
+#local-video,
+.remote-video {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.webcam-status {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+/* Timer & Important Elements */
+#exam-timer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Question Navigation */
+#question-container {
+  min-height: 350px;
+}
+
+.question-item {
+  margin-bottom: 15px;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Teacher Monitor Grid */
+.student-video-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.student-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 0 0 8px 0;
+  font-weight: 600;
+  color: #333;
+}
